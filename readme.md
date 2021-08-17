@@ -1,6 +1,6 @@
 readme.md
 
-# Create your own CV with ReactJS and Redux
+# Reactjs Piaono App
 
 ## App Info
 
