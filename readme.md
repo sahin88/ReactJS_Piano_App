@@ -4,7 +4,7 @@ readme.md
 
 ## App Info
 
-Via this app you can see the effect of gravitation on frictionless ambience.
+Via this app you can play online piano!
 
 ## Online demo
 
