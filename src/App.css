@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  background-color: aliceblue;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-direction: column;
+}
+.piano_user_info {
+  border: 1px solid #ddd;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #ccc;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
+.pianoKeyFrame {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.graphics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  width: 20%;
+  height: 400px;
+  flex-shrink: 0;
+  background-color: aqua;
+}
+
+.bars {
+  position: relative;
+  height: 0px;
+  width: 20px;
+  background-color: red;
+  border: 1px solid #fff;
+  animation-duration: 0.5s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
+  bottom: 0px;
+}
+
+@keyframes pendel {
+  0% {
+    height: 0px;
+    top: 25px;
+  }
+
+  50% {
+    height: 200px;
+  }
+
+  100% {
+    height: 400px;
+  }
+}
